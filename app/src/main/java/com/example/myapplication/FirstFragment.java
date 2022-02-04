@@ -31,6 +31,11 @@ public class FirstFragment extends Fragment {
     Uri lastCreatedDocUri;
 
     // from https://developer.android.com/training/basics/intents/result
+
+    // add
+    // implementation "androidx.activity:activity:1.2.0"
+    // implementation "androidx.fragment:fragment:1.3.0"
+    // to gradle dependencies
     ActivityResultLauncher<String> mCreateFile = registerForActivityResult(new ActivityResultContracts.CreateDocument(),
             new ActivityResultCallback<Uri>() {
                 @Override
